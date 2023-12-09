@@ -1,0 +1,11 @@
+import  random
+
+adjetivos = [' Assombrada ',' Mágica ',' Misteriosa ']
+nomes = [' Esmeralda ',' Branca ',' Luna ',' Hazel ',' Bellatrix ']
+
+def gerar_nome_bruxa():
+    adjetivo = random.choice(adjetivos)
+    nome = random.choice(nomes)
+    nome_completo = f'{adjetivo}{nome}, a bruxa'
+    return nome_completo
+print(gerar_nome_bruxa())
